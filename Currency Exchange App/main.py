@@ -1,8 +1,8 @@
 from datetime import datetime
 import streamlit as st
 import main_functions
-import plotly.express as px
-import pandas as pd
+#import plotly.express as px
+#import pandas as pd
 
 
 currencies = main_functions.getListOf_Currencies()
