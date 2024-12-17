@@ -17,10 +17,6 @@ my_key = read_from_file("currency_ExchangeAPI.json")
 currency_Exchange_Key = my_key["currency_layer"]
 
 
-def get_flag_emoji(country_code):
-    return ''.join(chr(0x1F1E6 - 65 + ord(char)) for char in country_code.upper())
-
-
 @st.cache_data
 def getListOf_Currencies():
     currency_list = f"https://api.currencylayer.com/list?access_key={currency_Exchange_Key}"
